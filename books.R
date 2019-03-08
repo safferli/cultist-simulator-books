@@ -41,8 +41,8 @@ books.list <- books.wiki %>%
   # get title and link into a dataframe
   purrr::map_dfr(f.get.link.and.title)
   
-
-
+## write booklist as csv to disk
+readr::write_csv(books.list, "csv/booklist.csv")
   
 
 
